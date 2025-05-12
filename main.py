@@ -17,7 +17,7 @@ def apply_filter(image,key):
         filtered[:,:,0]=cv2.subtract(filtered[:,:,0], 50)
     return filtered
 image=cv2.imread('image.png')
-if image is None:
+if image is None: 
     print("Error:Image not found")
     exit()
 cv2.imshow('Filtered Image', image)
